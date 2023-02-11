@@ -1,0 +1,10 @@
+/* remove ads */
+.toad,
+.dwgsm-ads,
+#top {
+  display: none !important;
+}
+
+#body {
+  background: #ffffff !important;
+}

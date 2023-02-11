@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Limanowa PRO",
+  "description": "Poprawa czytelności Limanowskich stron informacyjnych",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "./js/background.js"
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "focus-mode-lin.css"
+      ],
+      "matches": [
+        "https://limanowa.in/*"
+      ]
+    },
+    {
+      "css": [
+        "focus-mode-tv28.css"
+      ],
+      "matches": [
+        "https://tv28.pl/*",
+        "https://www.tv28.pl/*"
+      ]
+    }
+  ]
+}

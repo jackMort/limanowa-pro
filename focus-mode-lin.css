@@ -1,0 +1,81 @@
+/* remove ads */
+[data-dest="placeholder"] ,
+div.questionnaireBox,
+div.ad-box2,
+div.banners,
+div.bottomFixedBox,
+section.homepage section.homepageMems,
+section.g-box-big,
+div[id*="ScriptRoot"],
+body .google-revocation-link-placeholder,
+section#topBanner {
+  display: none !important;
+}
+
+/* fill some empty gaps */
+.mainContent .leftSide,
+section.homepage .lastNews {
+  width: 100% !important;
+}
+
+section.homepage .homepageSport {
+    margin-top: 0 !important;
+}
+
+section.homepage .homepageSport .lastPosts .content .slick .item {
+  max-height: 336px !important;
+  overflow-y: auto !important;
+}
+
+/* hide announcements and compoanies*/
+.companies,
+.announcements {
+  display:none !important;
+}
+
+
+body.dark-mode,
+body.dark-mode .mainContent h1, 
+body.dark-mode .mainContent h2,
+body.dark-mode .mainContent h3,
+body.dark-mode .mainContent h4,
+body.dark-mode .mainContent h5 {
+  color: #ffffff !important;
+  background: #333333 !important;
+}
+
+body.focus-mode header,
+body.focus-mode .shareBox,
+body.focus-mode .commentsBox,
+body.focus-mode .lastComments,
+body.focus-mode .readMore,
+body.focus-mode .contactUs,
+body.focus-mode footer,
+body.focus-mode .quickNavigation,
+body.focus-mode .breadcrumb,
+body.focus-mode .newInfo,
+body.focus-mode .icon.icon-player-play-button-of-circular-shape2
+{
+ display: none !important; 
+}
+
+body.focus-mode {
+  font-size: 1.2em;
+  color: #333333;
+}
+
+body.focus-mode .mainContent h1,
+body.focus-mode .mainContent h2, 
+body.focus-mode .mainContent h3, 
+body.focus-mode .mainContent h4, 
+body.focus-mode .maincontent h5 {
+  color: #333333;
+}
+
+body.focus-mode .mainContent h1 {
+  font-size:32px !important;
+}
+
+body.focus-mode .textBox.overflow.text-justify {
+  margin-top: 30px;
+}
