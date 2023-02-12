@@ -40,8 +40,8 @@ body.dark-mode .mainContent h2,
 body.dark-mode .mainContent h3,
 body.dark-mode .mainContent h4,
 body.dark-mode .mainContent h5 {
-  color: #ffffff !important;
-  background: #333333 !important;
+  color: #c9d1d9 !important;
+  background: #0D1117 !important;
 }
 
 body.focus-mode header,
@@ -78,4 +78,15 @@ body.focus-mode .mainContent h1 {
 
 body.focus-mode .textBox.overflow.text-justify {
   margin-top: 30px;
+}
+
+.limanowa-pro-menu {
+  padding-right: 18px;
+  background: #ff8c05;
+}
+.limanowa-pro-menu a {
+  color: #fff !important;
+}
+.limanowa-pro-menu > a::after {
+  color: #fff !important;
 }
