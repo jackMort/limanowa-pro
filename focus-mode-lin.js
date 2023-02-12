@@ -26,10 +26,22 @@ addMenuItem({ title: "tryb czytania", cls: "focus-mode", ul });
 addMenuItem({ title: "tryb ciemny", cls: "dark-mode", ul });
 
 const a = document.createElement("a");
-a.innerHTML = "PRO"
+a.innerHTML = "PRO";
 
 li.append(a);
 li.append(ul);
 
 const menu = document.getElementsByClassName("menu")[0];
 menu.append(li);
+
+const closeButtonWrapper = document.createElement("div");
+closeButtonWrapper.setAttribute("class", "limanowa-pro-close-wrapper");
+
+const closeButton = document.createElement("button");
+closeButton.innerHTML = "wyjdź z trybu czytania";
+closeButton.addEventListener("click", () => {
+  toggleBodyClassName("focus-mode");
+});
+closeButtonWrapper.appendChild(closeButton);
+
+document.body.appendChild(closeButtonWrapper);
