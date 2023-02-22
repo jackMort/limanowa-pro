@@ -8,6 +8,7 @@ section.homepage section.homepageMems,
 section.g-box-big,
 div[id*="ScriptRoot"],
 div[id*="div-gpt-ad"],
+div[id*="oa-360"],
 body .google-revocation-link-placeholder,
 section#topBanner {
   display: none !important;
