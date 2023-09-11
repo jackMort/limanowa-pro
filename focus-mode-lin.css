@@ -1,5 +1,7 @@
 /* remove ads */
 [data-dest="placeholder"] ,
+#topBarner,
+.ad-placeholder,
 div.questionnaireBox,
 div.ad-box2,
 div.banners,
